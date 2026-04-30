@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      h1 {
+        color: blue;
+      }
+      /* Descendent selector */
+      .box h1 {
+        color: blueviolet;
+      }
+      /* Child Selector */
+      .box > h1 {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Hii</h1>
+
+      <div class="box2">
+        <h1>Hello Benisha</h1>
+      </div>
+    </div>
+
+    <h1>Hii I am out of the box</h1>
+  </body>
+</html>

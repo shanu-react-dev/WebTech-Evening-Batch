@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+      * {
+        color: red;
+      }
+
+      .fifth,
+      #fourth {
+        color: green;
+      }
+
+      p {
+        color: blue;
+      }
+
+      .second {
+        background-color: blueviolet;
+        color: lightseagreen;
+      }
+
+      #first {
+        color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selectors in HTML</h1>
+    <ul>
+      <li>
+        simple Selectors
+        <ol>
+          <li id="first">ID uses symbol # to select the element</li>
+          <li class="second">Class uses symbol . to select the elements</li>
+          <li>Tag name selector: using tag name we can select the elements</li>
+          <li id="fourth">
+            Grouping Selector: uses , to group multiple elements at a time
+          </li>
+          <li class="fifth">
+            Universal Selector: selects all elements and uses * symbol
+          </li>
+        </ol>
+      </li>
+      <li>
+        Combinator Selectors
+        <ol>
+          <li>Descendent Selector</li>
+          <li>Child Selector</li>
+          <li>Adjacent Sibling Selector</li>
+          <li>General Sibling Selectors</li>
+        </ol>
+      </li>
+      <li>Attribute Selectors</li>
+      <li>Pseudo Class Selectors</li>
+      <li>Pseudo Element Selectors</li>
+    </ul>
+
+    <p>demo para</p>
+  </body>
+</html>

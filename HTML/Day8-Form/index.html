@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="username">Enter Username:</label>
+      <input
+        type="text"
+        placeholder="Enter Username"
+        name="username"
+        id="username"
+        required
+        minlength="3"
+        maxlength="30"
+      />
+
+      <br /><br />
+      <label for="password">Enter Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter Password"
+        required
+        pattern="[A-Za-z0-9]{8,12}"
+      />
+
+      <br /><br />
+      <label for="contact">Enter your contact</label>
+      <input
+        type="tel"
+        placeholder="Enter your contact"
+        name="contact"
+        id="contact"
+        minlength="10"
+        maxlength="10"
+      />
+
+      <br /><br />
+      <label for="age">Enter your age</label>
+      <input
+        type="number"
+        placeholder="Enter your age"
+        name="age"
+        id="age"
+        min="18"
+        max="45"
+      />
+
+      <br /><br />
+      <label for="githuburl">Enter your github url</label>
+      <input
+        type="url"
+        name="githuburl"
+        id="githuburl"
+        placeholder="Enter Github url"
+        required
+      />
+
+      <br /><br />
+      <label for="gender">Select Gender</label>
+      <input type="radio" name="gender" id="male" value="male" checked />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="others" value="others" />
+      <label for="others">Others</label>
+
+      <br /><br />
+      <label for="skills">Select your skills</label>
+      <input type="checkbox" name="skills" id="java" value="java" />
+      <label for="java">Java</label>
+      <input type="checkbox" name="skills" id="Dotnet" value="Dotnet" />
+      <label for="Dotnet">Dotnet</label>
+      <input
+        type="checkbox"
+        name="skills"
+        id="Ruby on rails"
+        value="Ruby on rails"
+      />
+      <label for="Ruby on rails">Ruby on rails</label>
+      <input type="checkbox" name="skills" id="golang" value="golang" />
+      <label for="golang">golang</label>
+      <input type="checkbox" name="skills" id="Python" value="Python" />
+      <label for="Python">Python</label>
+      <input
+        type="checkbox"
+        name="skills"
+        id="javascript"
+        checked
+        value="javascript"
+      />
+      <label for="javascript">javascript</label>
+
+      <br /><br />
+      <label for="country">Select your country</label>
+      <select name="country" id="country">
+        <option value="India">India</option>
+        <option value="Africa">Africa</option>
+        <option value="Yemen">Yemen</option>
+        <option value="Yokohoma">Yokohoma</option>
+      </select>
+
+      <br /><br />
+      <fieldset>
+        <legend>Address</legend>
+        <label for="housenumber">pleas specify your house number</label>
+        <input type="text" name="house number" id="housenumber" />
+
+        <br />
+        <label for="streetName">Street Name</label>
+        <input type="text" name="streetName" id="streetName" />
+      </fieldset>
+
+      <br /><br />
+
+      <label for="feedback">Enter your feedback</label>
+      <textarea name="feedback" id="feedback" cols="50" rows="10"></textarea>
+
+      <br /><br />
+      <label for="dob">Select your Date of Birth</label>
+      <input
+        type="date"
+        name="dob"
+        id="dob"
+        min="2025-01-01"
+        max="2026-01-01"
+      />
+
+      <br /><br />
+      <label for="datetime">Select date and time</label>
+      <input type="datetime-local" name="datetime" id="datetime" />
+
+      <input type="submit" value="Register" />
+      <input type="reset" value="Reset form" />
+      <input type="button" value="Dummy button" />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
